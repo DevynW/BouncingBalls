@@ -10,11 +10,18 @@ public class ballPlacement : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         Vector2 ballVelocity = new Vector2(Random.Range(-200, 200), Random.Range(-200, 200));
         rb.velocity = ballVelocity;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Ouch! Man Down!!!!!");
+        AudioSource audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
     }
 }
