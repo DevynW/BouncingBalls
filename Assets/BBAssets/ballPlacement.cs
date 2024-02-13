@@ -20,7 +20,6 @@ public class ballPlacement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Ouch! Man Down!!!!!");
         AudioSource audioSource = GetComponent<AudioSource>();
         audioSource.Play();
     }
