@@ -9,7 +9,7 @@ public class ballPlacement : MonoBehaviour
     void Start()
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        Vector2 ballVelocity = new Vector2(Random.Range(-200, 200), Random.Range(-200, 200));
+        Vector2 ballVelocity = new Vector2(Random.Range(-300, 300), Random.Range(-300, 300));
         rb.velocity = ballVelocity;
 
     }
