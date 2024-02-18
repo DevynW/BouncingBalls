@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0681f198a7952f344864d20126ce41ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  speed: 100
   paddleSelect: 0
   score: 0
   Score: {fileID: 2018658091}
@@ -1277,7 +1277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0681f198a7952f344864d20126ce41ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  speed: 100
   paddleSelect: 1
   score: 0
   Score: {fileID: 11510707}

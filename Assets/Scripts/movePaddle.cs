@@ -5,7 +5,7 @@ using TMPro;
 
 public class movePaddle : MonoBehaviour
 {
-    [SerializeField] float speed = .3f;
+    [SerializeField] float speed = 3f;
     [SerializeField] bool paddleSelect = true;
     public int score = 0;
     public TextMeshProUGUI Score;
@@ -24,22 +24,22 @@ public class movePaddle : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.UpArrow) && transform.position.y < 145)
             {
-                transform.Translate(speed * Vector3.up, Space.World);
+                transform.Translate(speed * Time.deltaTime * Vector3.up, Space.World);
             }
             if (Input.GetKey(KeyCode.DownArrow) && transform.position.y > -145)
             {
-                transform.Translate(speed * Vector3.down, Space.World);
+                transform.Translate(speed * Time.deltaTime * Vector3.down, Space.World);
             }
         }
         else if (paddleSelect == false)
         {
             if (Input.GetKey(KeyCode.W) && transform.position.y < 145)
             {
-                transform.Translate(speed * Vector3.up, Space.World);
+                transform.Translate(speed * Time.deltaTime * Vector3.up, Space.World);
             }
             if (Input.GetKey(KeyCode.S) && transform.position.y > -145)
             {
-                transform.Translate(speed * Vector3.down, Space.World);
+                transform.Translate(speed * Time.deltaTime * Vector3.down, Space.World);
             }
         }
     }
